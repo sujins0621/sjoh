@@ -4,6 +4,30 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
 
+  redis:
+    host: localhost
+    port: 6379
+  datasource: # local db
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password: 1234
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+  logging.level:
+    org.hibernate.SQL: debug
+
+  jwt:
+    secret:
+    refresh-token-validity-in-seconds: 1209600 # 14일
+    access-token-validity-in-seconds: 43200 # 12시간
+
 server:
   port: 8081
 
