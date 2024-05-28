@@ -1,9 +1,9 @@
-package com.framework.service;
+package com.server.sjoh.home.service;
 
-import com.framework.dto.UserDto;
-import com.framework.entity.Authority;
-import com.framework.entity.User;
-import com.framework.repository.UserRepository;
+import com.server.sjoh.home.dto.UserDto;
+import com.server.sjoh.home.entity.Authority;
+import com.server.sjoh.home.entity.User;
+import com.server.sjoh.home.repository.UserRepository;
 import com.framework.util.SecurityUtil;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -11,8 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.Optional;
-
-import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {

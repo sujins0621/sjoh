@@ -1,4 +1,4 @@
-package com.framework.dto;
+package com.server.sjoh.home.dto;
 
 import lombok.*;
 

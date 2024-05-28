@@ -1,4 +1,4 @@
-package com.framework.entity;
+package com.server.sjoh.home.entity;
 
 
 import jakarta.persistence.*;

@@ -23,11 +23,13 @@ spring:
   logging.level:
     org.hibernate.SQL: debug
 
-  jwt:
-    secret:
-    refresh-token-validity-in-seconds: 1209600 # 14일
-    access-token-validity-in-seconds: 43200 # 12시간
+
 
 server:
   port: 8081
 
+jwt:
+  secret: aa
+  token-validity-in-seconds: 1209600 # 14일
+  #refresh-token-validity-in-seconds: 1209600 # 14일
+  #access-token-validity-in-seconds: 43200 # 12시간
