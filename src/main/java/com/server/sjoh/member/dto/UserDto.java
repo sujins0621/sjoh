@@ -1,4 +1,4 @@
-package com.server.sjoh.home.dto;
+package com.server.sjoh.member.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

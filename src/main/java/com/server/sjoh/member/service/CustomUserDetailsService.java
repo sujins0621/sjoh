@@ -1,6 +1,6 @@
-package com.server.sjoh.home.service;
+package com.server.sjoh.member.service;
 
-import com.server.sjoh.home.repository.UserRepository;
+import com.server.sjoh.member.repository.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -29,7 +29,7 @@ public class CustomUserDetailsService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException(username + ": 데이터베이스에서 찾을 수 없습니다."));
     }
 
-    private User createUser(String username, com.server.sjoh.home.entity.User user) {
+    private User createUser(String username, com.server.sjoh.member.entity.User user) {
         if (!user.isActivated()) throw new RuntimeException(username + " 해당 username 은 활성화 되어 있지 않습니다.");
         List<GrantedAuthority> grantedAuthorityList = user.getAuthoritySet().stream().map((authority -> new SimpleGrantedAuthority(authority.getAuthorityName())))
                 .collect(Collectors.toList());

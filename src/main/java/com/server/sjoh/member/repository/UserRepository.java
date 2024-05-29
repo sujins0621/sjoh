@@ -1,6 +1,6 @@
-package com.server.sjoh.home.repository;
+package com.server.sjoh.member.repository;
 
-import com.server.sjoh.home.entity.User;
+import com.server.sjoh.member.entity.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 

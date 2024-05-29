@@ -1,9 +1,9 @@
-package com.server.sjoh.home.service;
+package com.server.sjoh.member.service;
 
-import com.server.sjoh.home.dto.UserDto;
-import com.server.sjoh.home.entity.Authority;
-import com.server.sjoh.home.entity.User;
-import com.server.sjoh.home.repository.UserRepository;
+import com.server.sjoh.member.dto.UserDto;
+import com.server.sjoh.member.entity.Authority;
+import com.server.sjoh.member.entity.User;
+import com.server.sjoh.member.repository.UserRepository;
 import com.framework.util.SecurityUtil;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
